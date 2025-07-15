@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+@font-face {
+  font-family: 'Norse-Bold'; /* give your font a name */
+  src: url('assets/fonts/Norse-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;  
+    height: 100vh;
+}
+
+.side-part{
+    position: relative;
+    min-width: 35%;
+    background: url(assets/images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.side-text{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem ;
+}
+
+.side-text > img{
+    height: 8em;
+}
+
+.side-text > span{
+    color: white;
+    font-size: 8em;
+    font-family: "Norse-Bold";
+}
+
+.left-form{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    /* padding: 2rem 3rem; */
+    gap: 2rem;
+    background-color: #f9f9f9;
+    /* flex-wrap: wrap; */
+}
+
+.text-top{
+    font-size: 1.4rem;
+    font-weight: 600;
+    max-width: 650px;
+    color: #333;
+    padding: 0 3rem;
+    /* line-height: 1.4; */
+}
+
+.sec-text{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    padding: 0 3rem;
+}
+
+.top-part{
+    background-color: white;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0,0.5);
+    padding: 2rem ;
+    /* margin: 0 3rem */
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.head-label{
+    font-weight: 400;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1rem;
+    /* min-width:  900px; */
+}
+
+input{
+    padding: 8px;
+}
+
+.input-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-bottom: 2rem;
+    max-width: 900px;
+}
+
+.form-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* flex-wrap: wrap; */
+    min-width: 250px;
+}
+
+.form-group label{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#password:invalid, #confirm-password:invalid{
+    outline: none;
+    border: none;
+    border: 1px solid red;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid blue;
+    /* box-shadow: 2em black; */
+    border-radius: 2px;
+}   
+
+button{
+    /* margin: 0 3rem; */
+
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #596d48;
+    color: white;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-weight: 600;
+    margin: 0 3rem;
+    margin-top: 2rem;
+}
+
+.login{
+    padding: 0 3rem;
+
+    font-weight: 400;
+}
+.Login  {
+    color: #596d48;
+}
